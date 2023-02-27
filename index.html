@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>EL!TE Pilots</title>
-  </head>
+	<head>
+		<meta charset="utf-8">
+		<title>EL!TE Pilots</title>
+	</head>
   
-  <body>
-    <p>Ciao</p>
-  </body>
+	<body>
+    
+		<h1>METAR</h1>
+		
+	<script>
+		fetch('https://beta.aviationweather.gov/cgi-bin/data/metar.php?ids=LIMF&taf=on')
+		.then(res => {
+		console.log(res);
+		})
+	</script>
+	</body>
 </html>
