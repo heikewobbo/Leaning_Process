@@ -42,6 +42,10 @@ nav ul li a{
 	border-radius: 3px;
 }
 
+a.wip, a.wip:hover{
+	background: #f58e8e;
+}
+
 a.active,a:hover{
 	background: #1b9bff;
 }
@@ -62,3 +66,4 @@ section{
 p{
 	font-size: 15px;
 }
+
