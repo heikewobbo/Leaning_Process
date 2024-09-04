@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planespotting Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Planespotting Portfolio</h1>
+            <p>Benvenuto nel mio portfolio di planespotting! Qui troverai una selezione delle mie foto preferite.</p>
+        </div>
+    </header>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="grid" id="gallery-grid">
+                <!-- Le immagini verranno aggiunte automaticamente da JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 - Planespotting Portfolio. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Array contenente i nomi delle immagini
+        const images = [
+            'foto1.jpg',
+            'foto2.jpg',
+            'foto3.jpg',
+            'foto4.jpg',
+            'foto5.jpg',
+            'foto6.jpg'
+        ];
+
+        // Seleziona il contenitore della griglia
+        const galleryGrid = document.getElementById('gallery-grid');
+
+        // Cicla attraverso le immagini e crea l'elemento HTML per ciascuna immagine
+        images.forEach(function(image) {
+            const gridItem = document.createElement('div');
+            gridItem.className = 'grid-item';
+
+            const imgElement = document.createElement('img');
+            imgElement.src = 'images/' + image;
+            imgElement.alt = 'Planespotting';
+
+            gridItem.appendChild(imgElement);
+            galleryGrid.appendChild(gridItem);
+        });
+    </script>
+</body>
+</html>
